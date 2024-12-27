@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #a8d8ea;
+    --secondary-color: #aa96da;
+    --text-color: #333;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.slider {
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem;
+    background: #e1306c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+    background: #c13584;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+#quiz-container {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: var(--primary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
